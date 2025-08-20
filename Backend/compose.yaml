@@ -1,0 +1,25 @@
+﻿services:
+  spotly.meeting.host.public:
+    image: spotly.meeting.host.public
+    build:
+      context: .
+      dockerfile: src/Meeting/Hosts/Spotly.Meeting.Host.Public/Dockerfile
+
+  spotly.meeting.host.public-1:
+    image: spotly.meeting.host.public-1
+    build:
+      context: .
+      dockerfile: src/Meeting/Hosts/Spotly.Meeting.Host.Public/Dockerfile
+
+  spotly.meeting.presentation:
+    image: spotly.meeting.presentation
+    build:
+      context: .
+      dockerfile: src/Meeting/Spotly.Meeting.Presentation/Dockerfile
+
+  spotly.meeting.consumers:
+    image: spotly.meeting.consumers
+    build:
+      context: .
+      dockerfile: src/Meeting/Spotly.Meeting.Consumers/Dockerfile
+
