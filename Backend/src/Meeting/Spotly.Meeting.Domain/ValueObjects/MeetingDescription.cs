@@ -1,6 +1,6 @@
 using Spotly.Meeting.Domain.Exceptions;
 
-namespace Spotly.Meeting.Domain.Aggregates;
+namespace Spotly.Meeting.Domain.ValueObjects;
 
 /// <summary>
 /// Объект-значение, который представляет собой описание встречи.

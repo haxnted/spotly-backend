@@ -1,16 +1,12 @@
 using Spotly.Meeting.Domain.Exceptions;
 
-namespace Spotly.Meeting.Domain.Aggregates;
+namespace Spotly.Meeting.Domain.ValueObjects;
 
 /// <summary>
 /// Объект-значение, которое представляет ссылку на онлайн-встречу.
 /// </summary>
 public sealed class MeetingUrl : IEquatable<MeetingUrl>, IComparable<MeetingUrl> 
 {
-    /// <summary>
-    /// Максимальная длина ссылки.
-    /// </summary>
-    private static readonly int MAX_URL_LENGTH = 500;
     /// <summary>
     /// Ссылка на онлайн-встречу.
     /// </summary>
@@ -36,10 +32,10 @@ public sealed class MeetingUrl : IEquatable<MeetingUrl>, IComparable<MeetingUrl>
             throw new MeetingException("Meeting url can't be empty."); 
         }
 
-        if (value.Length > MAX_URL_LENGTH)
-        {
-            throw new MeetingException($"Meeting url length must be less than {MAX_URL_LENGTH} symbols."); 
-        }
+        // if (value.Length > MAX_URL_LENGTH)
+        // {
+        //     throw new MeetingException($"Meeting url length must be less than {MAX_URL_LENGTH} symbols."); 
+        // }
         
         if (Uri.TryCreate(value, UriKind.Absolute, out var uriResult) is not true
             || (uriResult.Scheme != Uri.UriSchemeHttp && uriResult.Scheme != Uri.UriSchemeHttps))

@@ -1,4 +1,4 @@
-namespace Spotly.Meeting.Domain.Aggregates;
+namespace Spotly.Meeting.Domain.ValueObjects;
 
 /// <summary>
 /// Объект-значение, которое представляет дату и время начала встречи.

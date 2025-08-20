@@ -1,4 +1,4 @@
-namespace Spotly.Meeting.Domain.Aggregates;
+namespace Spotly.Meeting.Domain.Enums;
 
 /// <summary>
 /// Статус встречи.

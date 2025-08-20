@@ -1,6 +1,6 @@
 using System.Text;
 
-namespace Spotly.Meeting.Domain.Aggregates;
+namespace Spotly.Meeting.Domain.ValueObjects;
 
 /// <summary>
 /// Объект-значение, которая представляет место проведения встречи.

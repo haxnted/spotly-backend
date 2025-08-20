@@ -1,4 +1,7 @@
-﻿using Spotly.Meeting.Domain.Exceptions;
+﻿using Spotly.Meeting.Domain.Entities;
+using Spotly.Meeting.Domain.Enums;
+using Spotly.Meeting.Domain.Exceptions;
+using Spotly.Meeting.Domain.ValueObjects;
 
 namespace Spotly.Meeting.Domain.Aggregates;
 

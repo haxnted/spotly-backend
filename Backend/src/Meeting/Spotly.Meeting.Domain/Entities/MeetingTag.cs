@@ -1,4 +1,6 @@
-﻿namespace Spotly.Meeting.Domain.Aggregates;
+﻿using Spotly.Meeting.Domain.ValueObjects;
+
+namespace Spotly.Meeting.Domain.Entities;
 
 /// <summary>
 /// Сущность, описывающая тег встречи.
